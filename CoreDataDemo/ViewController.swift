@@ -56,8 +56,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             let aCompany = companies![indexPath.row]
             if CoreDataHandler.deleteData(company: aCompany ) {
                 print("delete successfully")
+                companies?.remove(at: indexPath.row)
             }
-            tableView.reloadRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
+            tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }
     
