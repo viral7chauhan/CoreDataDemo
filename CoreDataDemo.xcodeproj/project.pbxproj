@@ -8,26 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		74C665D6209F43380057604A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C665D5209F43380057604A /* AppDelegate.swift */; };
-		74C665D8209F43380057604A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C665D7209F43380057604A /* ViewController.swift */; };
+		74C665D8209F43380057604A /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C665D7209F43380057604A /* ListViewController.swift */; };
 		74C665DB209F43380057604A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74C665D9209F43380057604A /* Main.storyboard */; };
 		74C665DE209F43380057604A /* CoreDataDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 74C665DC209F43380057604A /* CoreDataDemo.xcdatamodeld */; };
 		74C665E0209F43380057604A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74C665DF209F43380057604A /* Assets.xcassets */; };
 		74C665E3209F43380057604A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74C665E1209F43380057604A /* LaunchScreen.storyboard */; };
 		74C665EB209F435E0057604A /* CoreDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C665EA209F435E0057604A /* CoreDataHandler.swift */; };
-		74C665ED209F5FBB0057604A /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C665EC209F5FBB0057604A /* AddViewController.swift */; };
+		74C665ED209F5FBB0057604A /* AddEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C665EC209F5FBB0057604A /* AddEditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		74C665D2209F43380057604A /* CoreDataDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74C665D5209F43380057604A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		74C665D7209F43380057604A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		74C665D7209F43380057604A /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		74C665DA209F43380057604A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74C665DD209F43380057604A /* CoreDataDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataDemo.xcdatamodel; sourceTree = "<group>"; };
 		74C665DF209F43380057604A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74C665E2209F43380057604A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74C665E4209F43380057604A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74C665EA209F435E0057604A /* CoreDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHandler.swift; sourceTree = "<group>"; };
-		74C665EC209F5FBB0057604A /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		74C665EC209F5FBB0057604A /* AddEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +41,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		74B613B621D74C1200811042 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				74C665EC209F5FBB0057604A /* AddEditViewController.swift */,
+				74C665D7209F43380057604A /* ListViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		74B613B721D74C2E00811042 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				74C665E1209F43380057604A /* LaunchScreen.storyboard */,
+				74C665DF209F43380057604A /* Assets.xcassets */,
+				74C665D5209F43380057604A /* AppDelegate.swift */,
+				74C665D9209F43380057604A /* Main.storyboard */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		74B613B821D74C5B00811042 /* CoreDataHandler */ = {
+			isa = PBXGroup;
+			children = (
+				74C665DC209F43380057604A /* CoreDataDemo.xcdatamodeld */,
+				74C665EA209F435E0057604A /* CoreDataHandler.swift */,
+			);
+			path = CoreDataHandler;
+			sourceTree = "<group>";
+		};
 		74C665C9209F43380057604A = {
 			isa = PBXGroup;
 			children = (
@@ -60,15 +89,10 @@
 		74C665D4209F43380057604A /* CoreDataDemo */ = {
 			isa = PBXGroup;
 			children = (
-				74C665D5209F43380057604A /* AppDelegate.swift */,
-				74C665D7209F43380057604A /* ViewController.swift */,
-				74C665D9209F43380057604A /* Main.storyboard */,
-				74C665DF209F43380057604A /* Assets.xcassets */,
-				74C665E1209F43380057604A /* LaunchScreen.storyboard */,
 				74C665E4209F43380057604A /* Info.plist */,
-				74C665DC209F43380057604A /* CoreDataDemo.xcdatamodeld */,
-				74C665EA209F435E0057604A /* CoreDataHandler.swift */,
-				74C665EC209F5FBB0057604A /* AddViewController.swift */,
+				74B613B821D74C5B00811042 /* CoreDataHandler */,
+				74B613B721D74C2E00811042 /* Helpers */,
+				74B613B621D74C1200811042 /* ViewControllers */,
 			);
 			path = CoreDataDemo;
 			sourceTree = "<group>";
@@ -100,11 +124,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Falguni Viral Chauhan";
 				TargetAttributes = {
 					74C665D1209F43380057604A = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -145,8 +170,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74C665ED209F5FBB0057604A /* AddViewController.swift in Sources */,
-				74C665D8209F43380057604A /* ViewController.swift in Sources */,
+				74C665ED209F5FBB0057604A /* AddEditViewController.swift in Sources */,
+				74C665D8209F43380057604A /* ListViewController.swift in Sources */,
 				74C665EB209F435E0057604A /* CoreDataHandler.swift in Sources */,
 				74C665DE209F43380057604A /* CoreDataDemo.xcdatamodeld in Sources */,
 				74C665D6209F43380057604A /* AppDelegate.swift in Sources */,
@@ -189,6 +214,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -196,6 +222,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -246,6 +273,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -253,6 +281,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -292,7 +321,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chauhan-group.CoreDataDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -307,7 +336,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chauhan-group.CoreDataDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

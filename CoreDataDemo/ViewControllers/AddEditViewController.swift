@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddViewController: UIViewController {
+class AddEditViewController: UIViewController {
 
     @IBOutlet weak var nameText: UITextField!
     @IBOutlet weak var ceoText: UITextField!
